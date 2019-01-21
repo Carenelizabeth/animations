@@ -143,6 +143,26 @@ footer p{
     margin-bottom: 10px;
 }
 
+.butterfly{
+    width: 200px;
+    height: 200px;
+}
+
+.butterfly-animation{
+    height: 100%;
+    width: 100%;
+    background-image: url('./assets/butterfly-sprite.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 1100%;
+    animation: flutter-wings .5s steps(10) 12;
+}
+
+@keyframes flutter-wings{
+    from {background-position: left;}
+    to {background-position: right;}
+}
+
 @media only screen and (min-width: 500px){
     header{
         height: 500px;
